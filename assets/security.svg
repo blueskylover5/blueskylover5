@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
+<title id="t">AI security: threats stopped, defenses deployed</title>
+<desc id="d">Attacks such as prompt injection, jailbreaks, data poisoning and adversarial inputs are stopped at a shield around the model, while defenses radiate outward.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b1a"/><stop offset=".55" stop-color="#0d1430"/><stop offset="1" stop-color="#170f36"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#94a3b8" stroke-opacity=".06"/></pattern>
+<linearGradient id="sh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e1065"/><stop offset="1" stop-color="#0b1226"/></linearGradient>
+<radialGradient id="halo"><stop offset="0" stop-color="#a78bfa" stop-opacity=".32"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+<filter id="neon" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="shc"><path d="M600 62L672 88V156C672 206 642 238 600 258C558 238 528 206 528 156V88Z"/></clipPath>
+</defs>
+<style>
+.mono{font-family:'Cascadia Code','SF Mono',Consolas,Menlo,'DejaVu Sans Mono',monospace}
+.halo{animation:breathe 4s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.5}50%{opacity:1}}
+</style>
+<rect width="1200" height="320" rx="18" fill="url(#bg)"/>
+<rect width="1200" height="320" rx="18" fill="url(#grid)"/>
+<rect x=".5" y=".5" width="1199" height="319" rx="18" fill="none" stroke="#a78bfa" stroke-opacity=".25"/>
+
+<text class="mono" x="300" y="36" font-size="11" fill="#fb7185" fill-opacity=".75" text-anchor="end" letter-spacing="3">THREATS</text>
+<text class="mono" x="900" y="36" font-size="11" fill="#2dd4bf" fill-opacity=".75" letter-spacing="3">DEFENSES</text>
+
+<circle class="halo" cx="600" cy="160" r="175" fill="url(#halo)"/>
+
+<!-- ripples -->
+<circle cx="600" cy="160" r="96" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0">
+<animate attributeName="r" values="96;152" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values=".6;0" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="600" cy="160" r="96" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0">
+<animate attributeName="r" values="96;152" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values=".6;0" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+</circle>
+
+<!-- rotating rings -->
+<g><circle cx="600" cy="160" r="118" fill="none" stroke="#67e8f9" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="3 9"/>
+<animateTransform attributeName="transform" type="rotate" from="0 600 160" to="360 600 160" dur="24s" repeatCount="indefinite"/></g>
+<g><circle cx="600" cy="160" r="134" fill="none" stroke="#a78bfa" stroke-opacity=".5" stroke-width="2" stroke-dasharray="30 14"/>
+<animateTransform attributeName="transform" type="rotate" from="360 600 160" to="0 600 160" dur="36s" repeatCount="indefinite"/></g>
+
+<!-- threat lanes -->
+<g fill="none" stroke="#fb7185" stroke-opacity=".35" stroke-width="1.5" stroke-dasharray="2 6">
+<path d="M316 76H490"/><path d="M316 128H464"/><path d="M316 192H464"/><path d="M316 244H490"/>
+</g>
+<g class="mono" font-size="14" fill="#fb7185" text-anchor="end">
+<text x="300" y="81">prompt injection</text><text x="300" y="133">jailbreaks</text>
+<text x="300" y="197">data poisoning</text><text x="300" y="249">adversarial inputs</text>
+</g>
+<g fill="#fb7185" filter="url(#neon)">
+<circle cx="316" cy="76" r="4" opacity="0">
+<animate attributeName="cx" values="316;490;490" keyTimes="0;.8;1" dur="2.4s" begin="0s" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;12" keyTimes="0;.8;1" dur="2.4s" begin="0s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.8;1" dur="2.4s" begin="0s" repeatCount="indefinite"/>
+</circle>
+<circle cx="316" cy="128" r="4" opacity="0">
+<animate attributeName="cx" values="316;464;464" keyTimes="0;.8;1" dur="2.4s" begin=".6s" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;12" keyTimes="0;.8;1" dur="2.4s" begin=".6s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.8;1" dur="2.4s" begin=".6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="316" cy="192" r="4" opacity="0">
+<animate attributeName="cx" values="316;464;464" keyTimes="0;.8;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;12" keyTimes="0;.8;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.8;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="316" cy="244" r="4" opacity="0">
+<animate attributeName="cx" values="316;490;490" keyTimes="0;.8;1" dur="2.4s" begin="1.8s" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;12" keyTimes="0;.8;1" dur="2.4s" begin="1.8s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.8;1" dur="2.4s" begin="1.8s" repeatCount="indefinite"/>
+</circle>
+</g>
+
+<!-- defense lanes -->
+<g fill="none" stroke="#2dd4bf" stroke-opacity=".35" stroke-width="1.5" stroke-dasharray="2 6">
+<path d="M710 76H884"/><path d="M736 128H884"/><path d="M736 192H884"/><path d="M710 244H884"/>
+</g>
+<g class="mono" font-size="14" fill="#2dd4bf">
+<text x="900" y="81">&#10003; input validation</text><text x="900" y="133">&#10003; red teaming</text>
+<text x="900" y="197">&#10003; robust training</text><text x="900" y="249">&#10003; output monitoring</text>
+</g>
+<g fill="#2dd4bf" filter="url(#neon)">
+<circle cx="710" cy="76" r="3.5" opacity="0">
+<animate attributeName="cx" values="710;884" dur="2.4s" begin=".3s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin=".3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="736" cy="128" r="3.5" opacity="0">
+<animate attributeName="cx" values="736;884" dur="2.4s" begin=".9s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin=".9s" repeatCount="indefinite"/>
+</circle>
+<circle cx="736" cy="192" r="3.5" opacity="0">
+<animate attributeName="cx" values="736;884" dur="2.4s" begin="1.5s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="1.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="710" cy="244" r="3.5" opacity="0">
+<animate attributeName="cx" values="710;884" dur="2.4s" begin="2.1s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="2.1s" repeatCount="indefinite"/>
+</circle>
+</g>
+
+<!-- shield -->
+<path d="M600 62L672 88V156C672 206 642 238 600 258C558 238 528 206 528 156V88Z" fill="url(#sh)" stroke="#a78bfa" stroke-width="2.5" filter="url(#neon)"/>
+<g clip-path="url(#shc)">
+<rect x="528" y="62" width="144" height="3" fill="#67e8f9" opacity=".65"><animate attributeName="y" values="62;256;62" dur="4s" repeatCount="indefinite"/></rect>
+</g>
+<path d="M584 148v-14a16 16 0 0 1 32 0v14" fill="none" stroke="#c4b5fd" stroke-width="4" stroke-linecap="round"/>
+<rect x="573" y="146" width="54" height="42" rx="8" fill="#a78bfa"/>
+<circle cx="600" cy="162" r="5.5" fill="#1e1b4b"/><rect x="598" y="164" width="4" height="12" rx="2" fill="#1e1b4b"/>
+</svg>
