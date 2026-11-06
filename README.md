@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="Full-Stack & AI Engineer: building intelligent systems from raw data to production" />
+<img src="assets/hero.svg?v=2" width="100%" alt="Full-Stack & AI Engineer: building intelligent systems from raw data to production" />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=67E8F9&center=true&vCenter=true&width=820&height=64&lines=Training+%26+fine-tuning+AI+models;Data+%E2%86%92+Model+%E2%86%92+Production;Full-stack%3A+interface+to+infrastructure;New+challenge%3A+AI+security;Secure+by+design%2C+shipped+end+to+end" />
@@ -15,7 +15,7 @@
 
 </div>
 
-<img src="assets/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🧬 About Me
 
@@ -41,7 +41,7 @@ class Engineer:
         return ["data first", "measure everything", "ship end to end", "secure by design"]
 ```
 
-<img src="assets/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🛠️ What I Do
 
@@ -83,11 +83,11 @@ class Engineer:
 </tr>
 </table>
 
-<img src="assets/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg?v=2" width="100%" alt="" />
 
 ## ⚙️ What It Takes to Build & Train AI
 
-<img src="assets/pipeline.svg" width="100%" alt="The AI training lifecycle: data, prepare, train, evaluate, deploy and monitor, joined in a continuous feedback loop" />
+<img src="assets/pipeline.svg?v=2" width="100%" alt="The AI training lifecycle: data, prepare, train, evaluate, deploy and monitor, joined in a continuous feedback loop" />
 
 > **A model is only as good as the system around it:** the data it learns from, the compute it trains on, the evaluations it must pass, and the feedback that keeps improving it.
 
@@ -166,15 +166,15 @@ class Engineer:
 </tr>
 </table>
 
-<img src="assets/training.svg" width="100%" alt="Animated illustration of a fine-tuning run: the training log prints in a terminal while loss falls and accuracy rises" />
+<img src="assets/training.svg?v=2" width="100%" alt="Animated illustration of a fine-tuning run: the training log prints in a terminal while loss falls and accuracy rises" />
 
 <p align="center"><sub>From config to checkpoint: clean data, distributed compute, tracked metrics, and an evaluation gate before anything ships.</sub></p>
 
-<img src="assets/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🛡️ New Challenge: AI Security
 
-<img src="assets/security.svg" width="100%" alt="Threats such as prompt injection, jailbreaks, data poisoning and adversarial inputs are stopped at a shield, while defenses radiate outward" />
+<img src="assets/security.svg?v=2" width="100%" alt="Threats such as prompt injection, jailbreaks, data poisoning and adversarial inputs are stopped at a shield, while defenses radiate outward" />
 
 AI security is the **new frontier I'm taking on**. As models move into real products, they open an entirely new attack surface, and the engineers who build and train them are well placed to defend them. I bring a builder's perspective to it: knowing how a model is trained and served tells you where it can break.
 
@@ -189,7 +189,7 @@ AI security is the **new frontier I'm taking on**. As models move into real prod
 
 <p align="center"><sub>Guided by <a href="https://genai.owasp.org/">OWASP Top 10 for LLM Applications</a> · <a href="https://atlas.mitre.org/">MITRE ATLAS</a> · <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a></sub></p>
 
-<img src="assets/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🧰 Tech Stack
 
@@ -231,7 +231,7 @@ AI security is the **new frontier I'm taking on**. As models move into real prod
 </tr>
 </table>
 
-<img src="assets/divider.svg" width="100%" alt="" />
+<img src="assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🧭 How I Work
 
@@ -275,4 +275,4 @@ Threat-model AI systems from day one, not after the first incident.
 @@ AI security            →  robustness · red teaming · secure ML pipelines   ◀ new challenge @@
 ```
 
-<img src="assets/footer.svg" width="100%" alt="Thanks for visiting. Let's build intelligent, secure systems." />
+<img src="assets/footer.svg?v=2" width="100%" alt="Thanks for visiting. Let's build intelligent, secure systems." />
