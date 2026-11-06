@@ -3,8 +3,8 @@
 <img src="assets/hero.svg" width="100%" alt="Full-Stack & AI Engineer: building intelligent systems from raw data to production" />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=67E8F9&center=true&vCenter=true&width=640&lines=Training+%26+fine-tuning+AI+models;Data+%E2%86%92+Model+%E2%86%92+Production;Full-stack%3A+interface+to+infrastructure;New+challenge%3A+AI+security;Secure+by+design%2C+shipped+end+to+end" />
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=0E7490&center=true&vCenter=true&width=640&lines=Training+%26+fine-tuning+AI+models;Data+%E2%86%92+Model+%E2%86%92+Production;Full-stack%3A+interface+to+infrastructure;New+challenge%3A+AI+security;Secure+by+design%2C+shipped+end+to+end" alt="Training & fine-tuning AI models · Data → Model → Production · Full-stack: interface to infrastructure · New challenge: AI security" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=67E8F9&center=true&vCenter=true&width=820&height=64&lines=Training+%26+fine-tuning+AI+models;Data+%E2%86%92+Model+%E2%86%92+Production;Full-stack%3A+interface+to+infrastructure;New+challenge%3A+AI+security;Secure+by+design%2C+shipped+end+to+end" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=0E7490&center=true&vCenter=true&width=820&height=64&lines=Training+%26+fine-tuning+AI+models;Data+%E2%86%92+Model+%E2%86%92+Production;Full-stack%3A+interface+to+infrastructure;New+challenge%3A+AI+security;Secure+by+design%2C+shipped+end+to+end" alt="Training & fine-tuning AI models · Data → Model → Production · Full-stack: interface to infrastructure · New challenge: AI security" />
 </picture>
 
 <br />
