@@ -3,14 +3,15 @@
 <img src="assets/hero.svg?v=2" width="100%" alt="Full-Stack & AI Engineer: building intelligent systems from raw data to production" />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=67E8F9&center=true&vCenter=true&width=820&height=64&lines=Training+%26+fine-tuning+AI+models;Data+%E2%86%92+Model+%E2%86%92+Production;Full-stack%3A+interface+to+infrastructure;New+challenge%3A+AI+security;Secure+by+design%2C+shipped+end+to+end" />
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=0E7490&center=true&vCenter=true&width=820&height=64&lines=Training+%26+fine-tuning+AI+models;Data+%E2%86%92+Model+%E2%86%92+Production;Full-stack%3A+interface+to+infrastructure;New+challenge%3A+AI+security;Secure+by+design%2C+shipped+end+to+end" alt="Training & fine-tuning AI models · Data → Model → Production · Full-stack: interface to infrastructure · New challenge: AI security" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=67E8F9&center=true&vCenter=true&width=820&height=64&lines=Training+%26+fine-tuning+AI+models;Subnet+miner+on+Bittensor;Data+%E2%86%92+Model+%E2%86%92+Production;Full-stack%3A+interface+to+infrastructure;New+challenge%3A+AI+security;Secure+by+design%2C+shipped+end+to+end" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=0E7490&center=true&vCenter=true&width=820&height=64&lines=Training+%26+fine-tuning+AI+models;Subnet+miner+on+Bittensor;Data+%E2%86%92+Model+%E2%86%92+Production;Full-stack%3A+interface+to+infrastructure;New+challenge%3A+AI+security;Secure+by+design%2C+shipped+end+to+end" alt="Training & fine-tuning AI models · Subnet miner on Bittensor · Data → Model → Production · Full-stack: interface to infrastructure · New challenge: AI security" />
 </picture>
 
 <br />
 
 <img src="https://img.shields.io/badge/Focus-AI%20Training-22d3ee?style=for-the-badge&labelColor=0b1020" alt="Focus: AI Training" />
 <img src="https://img.shields.io/badge/Role-Full--Stack%20%26%20AI%20Engineer-a78bfa?style=for-the-badge&labelColor=0b1020" alt="Role: Full-Stack & AI Engineer" />
+<img src="https://img.shields.io/badge/Now-Bittensor%20Subnet%20Miner-fbbf24?style=for-the-badge&labelColor=0b1020" alt="Now: Bittensor subnet miner" />
 <img src="https://img.shields.io/badge/New%20Challenge-AI%20Security-f472b6?style=for-the-badge&labelColor=0b1020" alt="New challenge: AI Security" />
 
 </div>
@@ -21,7 +22,7 @@
 
 I'm a **full-stack and AI engineer** who builds intelligent systems end to end, from the data pipelines and training runs that shape a model to the APIs and interfaces that put it in people's hands.
 
-My focus today is **AI training**: curating high-quality data, training and fine-tuning models, evaluating them rigorously, and taking them all the way to production. I've also taken on a **new challenge: AI security**. My goal there is to make sure the systems I build hold up against real-world attacks and earn the trust of the people who use them.
+My focus today is **AI training**: curating high-quality data, training and fine-tuning models, evaluating them rigorously, and taking them all the way to production. I put that into practice every day as a **subnet miner on Bittensor**, where independent validators score my models live. I've also taken on a **new challenge: AI security**. My goal there is to make sure the systems I build hold up against real-world attacks and earn the trust of the people who use them.
 
 ```python
 class Engineer:
@@ -29,6 +30,7 @@ class Engineer:
 
     roles = ["Full-Stack Engineer", "AI Engineer"]
     focus = ["AI training", "fine-tuning & alignment", "evaluation", "MLOps"]
+    currently = "Subnet miner on Bittensor"
     stack = {
         "ai":       ["Python", "PyTorch", "Hugging Face", "CUDA"],
         "frontend": ["TypeScript", "React", "Next.js"],
@@ -82,6 +84,80 @@ class Engineer:
 </td>
 </tr>
 </table>
+
+<img src="assets/divider.svg?v=2" width="100%" alt="" />
+
+## ⛏️ Bittensor: Subnet Miner
+
+<p align="center">
+<img src="https://img.shields.io/badge/Network-Bittensor-fbbf24?style=for-the-badge&labelColor=0b1020" alt="Network: Bittensor" />
+<img src="https://img.shields.io/badge/Role-Subnet%20Miner-22d3ee?style=for-the-badge&labelColor=0b1020" alt="Role: Subnet Miner" />
+<img src="https://img.shields.io/badge/Status-Active-34d399?style=for-the-badge&labelColor=0b1020" alt="Status: Active" />
+</p>
+
+I currently work as a **subnet miner on [Bittensor](https://bittensor.com)**, the decentralized network where AI models compete inside specialized subnets and earn emissions for the value they produce. It's AI engineering with nowhere to hide: independent validators score my models around the clock, the bar rises every time someone ships something better, and rewards follow measured quality, not claims.
+
+<img src="assets/bittensor.svg?v=2" width="100%" alt="How subnet mining works: validators query miners, miners respond, validators score the responses and set weights on chain, Yuma Consensus turns the weights into emissions, and emissions flow back to the miner" />
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🧠 Model Training & Fine-Tuning
+
+- Train and fine-tune models for each subnet's objective
+- Fast experiment loops across data, hyperparameters and architecture
+- Distill and optimize models so they stay fast under live load
+- Promote a checkpoint only when it beats the one in production
+
+</td>
+<td width="50%" valign="top">
+
+#### ⚖️ Incentive & Evaluation
+
+- Study each subnet's incentive mechanism and validator scoring
+- Reproduce validator evaluation locally, so every change is measured before it ships
+- Follow how scores become weights, and weights become emissions
+- Look at scoring through an attacker's eyes, which feeds straight into my AI security challenge
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🖥️ Full-Stack Tooling
+
+- Dashboards for miner performance, incentive and emissions
+- Services and APIs that answer validator requests reliably
+- Pipelines that join on-chain metagraph data with my own metrics
+- Alerts that fire when rank or rewards start to slip
+
+</td>
+<td width="50%" valign="top">
+
+#### 🚀 Infrastructure & GPU Ops
+
+- Run and scale GPU miners for high uptime
+- Automated deploys with fast rollback
+- Monitoring for latency, errors and GPU utilization
+- Key hygiene: coldkeys kept offline, a separate hotkey per miner
+
+</td>
+</tr>
+</table>
+
+```python
+# A miner's loop: compete, measure, improve, repeat
+while subnet.is_live():
+    data  = curate(subnet.objective)          # data that matches what validators reward
+    model = train(model, data)                # fine-tune, distill, optimize
+    score = evaluate(model, validator_logic)  # measure locally before shipping
+    if score > production.score:
+        deploy(model)                         # zero-downtime rollout, rollback ready
+    monitor(metagraph.incentive)              # on-chain feedback closes the loop
+```
+
+> **On Bittensor, the benchmark never sleeps.** Every model is scored live by independent validators, so training discipline, honest evaluation and reliable infrastructure show up directly in the results.
 
 <img src="assets/divider.svg?v=2" width="100%" alt="" />
 
@@ -211,6 +287,7 @@ AI security is the **new frontier I'm taking on**. As models move into real prod
 <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=fff" alt="Apache Spark" />
 <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=fff" alt="Apache Airflow" />
 <img src="https://img.shields.io/badge/DVC-13ADC7?style=for-the-badge&logo=dvc&logoColor=fff" alt="DVC" />
+<img src="https://img.shields.io/badge/Bittensor-000000?style=for-the-badge" alt="Bittensor" />
 </td>
 </tr>
 <tr>
@@ -272,6 +349,7 @@ Threat-model AI systems from day one, not after the first incident.
 + Full-stack engineering  →  web apps · APIs · cloud infrastructure
 + AI engineering          →  products powered by machine learning
 + AI training             →  data · fine-tuning · alignment · evaluation      ◀ now
++ Bittensor subnet miner  →  models competing live on a decentralized network ◀ now
 @@ AI security            →  robustness · red teaming · secure ML pipelines   ◀ new challenge @@
 ```
 

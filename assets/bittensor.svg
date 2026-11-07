@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="t d">
+<title id="t">Subnet mining on Bittensor</title>
+<desc id="d">Validators send tasks to miners, miners respond, validators score the responses and set weights on chain, Yuma Consensus turns the weights into emissions, and emissions flow back to the miner.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b1a"/><stop offset=".55" stop-color="#0d1430"/><stop offset="1" stop-color="#170f36"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#94a3b8" stroke-opacity=".06"/></pattern>
+<radialGradient id="mine" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#a5f3fc"/><stop offset=".55" stop-color="#22d3ee"/><stop offset="1" stop-color="#0e7490"/></radialGradient>
+<radialGradient id="core" cx=".5" cy=".4" r=".65"><stop offset="0" stop-color="#2e1065"/><stop offset="1" stop-color="#0b1226"/></radialGradient>
+<radialGradient id="halo"><stop offset="0" stop-color="#fbbf24" stop-opacity=".22"/><stop offset="1" stop-color="#fbbf24" stop-opacity="0"/></radialGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+<filter id="neon" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+.mono{font-family:'Cascadia Code','SF Mono',Consolas,Menlo,'DejaVu Sans Mono',monospace}
+.sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}
+.halo{animation:breathe 4s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
+.tw{animation:tw 3s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.55}50%{opacity:1}}
+.blink{animation:blink 1.6s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+</style>
+<rect width="1200" height="420" rx="18" fill="url(#bg)"/>
+<rect width="1200" height="420" rx="18" fill="url(#grid)"/>
+<rect x=".5" y=".5" width="1199" height="419" rx="18" fill="none" stroke="#22d3ee" stroke-opacity=".25"/>
+
+<!-- column captions -->
+<g class="mono" font-size="15" font-weight="600" letter-spacing="3" text-anchor="middle">
+<text x="270" y="44" fill="#67e8f9" fill-opacity=".85">MINERS</text>
+<text x="625" y="44" fill="#c4b5fd" fill-opacity=".9">VALIDATORS</text>
+<text x="975" y="44" fill="#fbbf24" fill-opacity=".85">YUMA CONSENSUS</text>
+</g>
+<g class="mono" font-size="15" fill="#8b9bb4" text-anchor="middle">
+<text x="270" y="70">train &#183; serve &#183; compete</text>
+<text x="625" y="70">query &#183; score &#183; set weights</text>
+<text x="975" y="70">weights &#8594; emissions</text>
+</g>
+
+<!-- edges: every validator talks to every miner -->
+<g stroke="#94a3b8" stroke-opacity=".12">
+<path d="M270 96L625 120M270 96L625 209M270 96L625 298"/>
+<path d="M270 150L625 120M270 150L625 209M270 150L625 298"/>
+<path d="M270 204L625 120M270 204L625 209M270 204L625 298"/>
+<path d="M270 258L625 120M270 258L625 209M270 258L625 298"/>
+</g>
+<g stroke="#67e8f9" stroke-opacity=".35" stroke-width="1.5">
+<path d="M270 322L625 120M270 322L625 209M270 322L625 298"/>
+</g>
+
+<!-- weights to chain + emissions back to the miner -->
+<g fill="none" stroke="#a78bfa" stroke-opacity=".4" stroke-width="1.5" stroke-dasharray="2 6">
+<path d="M655 120C770 120 800 209 897 209"/><path d="M655 209H897"/><path d="M655 298C770 298 800 209 897 209"/>
+</g>
+<path d="M975 289C975 392 270 392 270 348" fill="none" stroke="#fbbf24" stroke-opacity=".38" stroke-width="1.5" stroke-dasharray="3 7"/>
+<path d="M1053 209H1090" stroke="#fbbf24" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="3 4"/>
+<text class="mono" x="622" y="404" font-size="16" fill="#8b9bb4" text-anchor="middle">emissions return to miners &#183; weighted by performance</text>
+
+<!-- 1. validators query miners (0 - 1.2s) -->
+<g fill="#c4b5fd" filter="url(#neon)">
+<circle r="4" opacity="0"><animateMotion path="M625 120L270 322" calcMode="linear" keyPoints="0;1;1" keyTimes="0;.2;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.02;.18;.2;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="4" opacity="0"><animateMotion path="M625 209L270 322" calcMode="linear" keyPoints="0;1;1" keyTimes="0;.2;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.02;.18;.2;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="4" opacity="0"><animateMotion path="M625 298L270 322" calcMode="linear" keyPoints="0;1;1" keyTimes="0;.2;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.02;.18;.2;1" dur="6s" repeatCount="indefinite"/></circle>
+</g>
+<g fill="#c4b5fd">
+<circle r="3" opacity="0"><animateMotion path="M625 120L270 96" calcMode="linear" keyPoints="0;1;1" keyTimes="0;.2;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.5;.5;0;0" keyTimes="0;.02;.18;.2;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="3" opacity="0"><animateMotion path="M625 298L270 150" calcMode="linear" keyPoints="0;1;1" keyTimes="0;.2;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.5;.5;0;0" keyTimes="0;.02;.18;.2;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="3" opacity="0"><animateMotion path="M625 209L270 204" calcMode="linear" keyPoints="0;1;1" keyTimes="0;.2;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.5;.5;0;0" keyTimes="0;.02;.18;.2;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="3" opacity="0"><animateMotion path="M625 120L270 258" calcMode="linear" keyPoints="0;1;1" keyTimes="0;.2;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.5;.5;0;0" keyTimes="0;.02;.18;.2;1" dur="6s" repeatCount="indefinite"/></circle>
+</g>
+
+<!-- 2. miners respond (1.3 - 2.5s) -->
+<g fill="#67e8f9" filter="url(#neon)">
+<circle r="4.5" opacity="0"><animateMotion path="M270 322L625 120" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.2167;.4167;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.2167;.2367;.3967;.4167;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="4.5" opacity="0"><animateMotion path="M270 322L625 209" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.2167;.4167;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.2167;.2367;.3967;.4167;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="4.5" opacity="0"><animateMotion path="M270 322L625 298" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.2167;.4167;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.2167;.2367;.3967;.4167;1" dur="6s" repeatCount="indefinite"/></circle>
+</g>
+<g fill="#67e8f9">
+<circle r="3" opacity="0"><animateMotion path="M270 96L625 120" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.2167;.4167;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;.5;.5;0;0" keyTimes="0;.2167;.2367;.3967;.4167;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="3" opacity="0"><animateMotion path="M270 150L625 298" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.2167;.4167;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;.5;.5;0;0" keyTimes="0;.2167;.2367;.3967;.4167;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="3" opacity="0"><animateMotion path="M270 204L625 209" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.2167;.4167;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;.5;.5;0;0" keyTimes="0;.2167;.2367;.3967;.4167;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="3" opacity="0"><animateMotion path="M270 258L625 120" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.2167;.4167;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;.5;.5;0;0" keyTimes="0;.2167;.2367;.3967;.4167;1" dur="6s" repeatCount="indefinite"/></circle>
+</g>
+
+<!-- 4. validators send weights to the chain (3.2 - 4.0s) -->
+<g fill="#a78bfa" filter="url(#neon)">
+<circle r="4.5" opacity="0"><animateMotion path="M655 120C770 120 800 209 897 209" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.5333;.6667;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.5333;.5533;.6467;.6667;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="4.5" opacity="0"><animateMotion path="M655 209H897" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.5333;.6667;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.5333;.5533;.6467;.6667;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle r="4.5" opacity="0"><animateMotion path="M655 298C770 298 800 209 897 209" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.5333;.6667;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.5333;.5533;.6467;.6667;1" dur="6s" repeatCount="indefinite"/></circle>
+</g>
+
+<!-- 6. emissions travel back to my miner (4.1 - 5.9s) -->
+<g filter="url(#neon)">
+<g opacity="0"><circle r="8" fill="url(#gold)"/><circle r="4" fill="none" stroke="#92400e" stroke-width="1.5"/><animateMotion path="M975 289C975 392 270 392 270 348" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.6833;.9167;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.6833;.7033;.8967;.9167;1" dur="6s" repeatCount="indefinite"/></g>
+<g opacity="0"><circle r="8" fill="url(#gold)"/><circle r="4" fill="none" stroke="#92400e" stroke-width="1.5"/><animateMotion path="M975 289C975 392 270 392 270 348" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.7167;.95;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.7167;.7367;.93;.95;1" dur="6s" repeatCount="indefinite"/></g>
+<g opacity="0"><circle r="8" fill="url(#gold)"/><circle r="4" fill="none" stroke="#92400e" stroke-width="1.5"/><animateMotion path="M975 289C975 392 270 392 270 348" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;.75;.9833;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.75;.77;.9633;.9833;1" dur="6s" repeatCount="indefinite"/></g>
+</g>
+
+<!-- other miners -->
+<g>
+<circle cx="270" cy="96" r="13" fill="#0e1a33" stroke="#67e8f9" stroke-opacity=".45" stroke-width="1.5"/><circle class="tw" cx="270" cy="96" r="4" fill="#67e8f9" fill-opacity=".6"/>
+<circle cx="270" cy="150" r="13" fill="#0e1a33" stroke="#67e8f9" stroke-opacity=".45" stroke-width="1.5"/><circle class="tw" style="animation-delay:-.8s" cx="270" cy="150" r="4" fill="#67e8f9" fill-opacity=".6"/>
+<circle cx="270" cy="204" r="13" fill="#0e1a33" stroke="#67e8f9" stroke-opacity=".45" stroke-width="1.5"/><circle class="tw" style="animation-delay:-1.6s" cx="270" cy="204" r="4" fill="#67e8f9" fill-opacity=".6"/>
+<circle cx="270" cy="258" r="13" fill="#0e1a33" stroke="#67e8f9" stroke-opacity=".45" stroke-width="1.5"/><circle class="tw" style="animation-delay:-2.4s" cx="270" cy="258" r="4" fill="#67e8f9" fill-opacity=".6"/>
+</g>
+
+<!-- my miner -->
+<circle cx="270" cy="322" r="22" fill="none" stroke="#67e8f9" stroke-width="1.5" opacity="0">
+<animate attributeName="r" values="22;38" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values=".55;0" dur="2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="270" cy="322" r="22" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="0">
+<animate attributeName="r" values="22;22;48" keyTimes="0;.9167;1" dur="6s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;.95;0" keyTimes="0;.9167;.93;1" dur="6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="270" cy="322" r="22" fill="url(#mine)" filter="url(#neon)"/>
+<g transform="translate(270 322)">
+<path d="M-5-13v4M0-13v4M5-13v4M-5 9v4M0 9v4M5 9v4M-13-5h4M-13 0h4M-13 5h4M9-5h4M9 0h4M9 5h4" stroke="#06202a" stroke-width="2"/>
+<rect x="-9" y="-9" width="18" height="18" rx="3" fill="#06202a"/>
+<rect x="-4" y="-4" width="8" height="8" rx="1.5" fill="#67e8f9"/>
+</g>
+<text class="mono" x="228" y="322" font-size="18" font-weight="700" fill="#67e8f9" text-anchor="end">my miner</text>
+<circle class="blink" cx="180" cy="340" r="4.5" fill="#34d399"/>
+<text class="mono" x="228" y="346" font-size="15" fill="#34d399" text-anchor="end">live</text>
+
+<!-- validators -->
+<g fill="none" stroke="#a78bfa" stroke-opacity=".18" stroke-width="3">
+<circle cx="625" cy="120" r="28"/><circle cx="625" cy="209" r="28"/><circle cx="625" cy="298" r="28"/>
+</g>
+<g fill="none" stroke="#c4b5fd" stroke-width="3" stroke-dasharray="100 100" stroke-dashoffset="100">
+<path d="M625 92a28 28 0 1 1 0 56a28 28 0 1 1 0-56" pathLength="100"><animate attributeName="stroke-dashoffset" values="100;100;0;0;100" keyTimes="0;.4167;.5333;.95;1" dur="6s" repeatCount="indefinite"/></path>
+<path d="M625 181a28 28 0 1 1 0 56a28 28 0 1 1 0-56" pathLength="100"><animate attributeName="stroke-dashoffset" values="100;100;0;0;100" keyTimes="0;.4167;.5333;.95;1" dur="6s" repeatCount="indefinite"/></path>
+<path d="M625 270a28 28 0 1 1 0 56a28 28 0 1 1 0-56" pathLength="100"><animate attributeName="stroke-dashoffset" values="100;100;0;0;100" keyTimes="0;.4167;.5333;.95;1" dur="6s" repeatCount="indefinite"/></path>
+</g>
+<g fill="none" stroke="#c4b5fd" stroke-width="2" opacity="0">
+<circle cx="625" cy="120" r="20"><animate attributeName="r" values="20;20;40" keyTimes="0;.4167;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle cx="625" cy="209" r="20"><animate attributeName="r" values="20;20;40" keyTimes="0;.4167;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle cx="625" cy="298" r="20"><animate attributeName="r" values="20;20;40" keyTimes="0;.4167;1" dur="6s" repeatCount="indefinite"/></circle>
+<animate attributeName="opacity" values="0;0;.9;0;0" keyTimes="0;.4167;.43;.5;1" dur="6s" repeatCount="indefinite"/>
+</g>
+<g filter="url(#neon)">
+<circle cx="625" cy="120" r="20" fill="#1e1b4b" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="625" cy="209" r="20" fill="#1e1b4b" stroke="#a78bfa" stroke-width="2"/>
+<circle cx="625" cy="298" r="20" fill="#1e1b4b" stroke="#a78bfa" stroke-width="2"/>
+</g>
+<g fill="none" stroke="#ddd6fe" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M617 120l5 5l9-10"/><path d="M617 209l5 5l9-10"/><path d="M617 298l5 5l9-10"/>
+</g>
+
+<!-- consensus -->
+<circle class="halo" cx="975" cy="209" r="120" fill="url(#halo)"/>
+<g><circle cx="975" cy="209" r="76" fill="none" stroke="#fbbf24" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="4 10"/>
+<circle cx="975" cy="133" r="4" fill="#fbbf24"/>
+<animateTransform attributeName="transform" type="rotate" from="0 975 209" to="360 975 209" dur="20s" repeatCount="indefinite"/></g>
+<circle cx="975" cy="209" r="60" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0">
+<animate attributeName="r" values="60;60;100;100" keyTimes="0;.6667;.7667;1" dur="6s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;.9;0;0" keyTimes="0;.6667;.68;.7667;1" dur="6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="975" cy="209" r="60" fill="url(#core)" stroke="#a78bfa" stroke-width="2.5" filter="url(#neon)"/>
+<text class="sans" x="975" y="230" font-size="64" font-weight="700" fill="url(#gold)" text-anchor="middle">&#964;</text>
+
+<!-- chain blocks -->
+<g fill="#0e1a33" stroke="#fbbf24" stroke-opacity=".55" stroke-width="1.5">
+<rect x="1092" y="152" width="44" height="30" rx="6"/>
+<rect x="1092" y="194" width="44" height="30" rx="6"><animate attributeName="fill" values="#0e1a33;#0e1a33;#78350f;#0e1a33;#0e1a33" keyTimes="0;.6667;.7;.85;1" dur="6s" repeatCount="indefinite"/></rect>
+<rect x="1092" y="236" width="44" height="30" rx="6"/>
+</g>
+<path d="M1114 182v12M1114 224v12" stroke="#fbbf24" stroke-opacity=".55" stroke-width="1.5"/>
+<path d="M1102 163h24M1102 171h14M1102 205h24M1102 213h14M1102 247h24M1102 255h14" stroke="#fbbf24" stroke-opacity=".45" stroke-width="2" stroke-linecap="round"/>
+<text class="mono" x="1114" y="292" font-size="15" fill="#8b9bb4" text-anchor="middle">chain</text>
+</svg>
